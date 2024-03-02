@@ -9,7 +9,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-               <!-- lOGO IMAGE FOOTER -->
+    <!-- lOGO IMAGE FOOTER -->
     <div class="wrapper left">
         <div class="left-side">
             <div class="logocontainer">
@@ -17,51 +17,64 @@
                 <div id="logotext">ODIN</div>
             </div>
             <footer>
-                Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA" target="_blank">Unsplash</a>
+                Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West</a> on <a
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
+                    target="_blank">Unsplash</a>
             </footer>
         </div>
     </div>
 
-             <!-- Form Section -->
+    <!-- Form Section -->
     <div class="wrapper right">
-        <div class="motivatePara">
-            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <div class="motivatepara">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize
+                your deepest dreams.</p>
             <p>Sign-up now to get started!</p>
             <p>You know you want to.</p>
         </div>
 
-        <form >
-            <h2>Let's do this!</h2>
-            <div class="left-form">
-                <label for="firstName">FIRST NAME*</label>
-                <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+        <form id="myform">
+            <h3>Let's do this!</h3>
+            <div class="flexwrapper">
+                <div class="left-form">
 
-                <label for="email">EMAIL*</label>
-                <input type="email" id="email" name="email" required autocomplete="email">
+                    <div>
+                        <label for="firstName">FIRST NAME*</label>
+                        <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+                    </div>
 
-                <label for="pass1">PASSWORD*</label>
-                <input type="password" id="pass1" name="password" required autocomplete="new-password">
-            </div>
+                    <div>
+                        <label for="email">EMAIL*</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
 
-            <div class="right-form">
-                <label for="lastName">LAST NAME*</label>
-                <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                    <div>
+                        <label for="pass1">PASSWORD*</label>
+                        <input type="password" id="pass1" name="password" class="error" required autocomplete="new-password">
+                    </div>
 
-                <label for="telephone">PHONE NUMBER*</label>
-                <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
-
-                <label for="pass2">CONFIRM PASSWORD*</label>
-                <input type="password" id="pass2" name="password" required autocomplete="new-password">
-            </div>
-
-            <div class="account">
-                <button type="submit">Create Account</button>
-                <div class="user">Already have an account? <a href="#">Log in</a></div>
+                </div>
+                <div class="right-form">
+                    <div>
+                        <label for="lastName">LAST NAME*</label>
+                        <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+                    </div>
+                    <div>
+                        <label for="telephone">PHONE NUMBER*</label>
+                        <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+                    </div>
+                    <div>
+                        <label for="pass2">CONFIRM PASSWORD*</label>
+                        <input type="password" id="pass2" name="password" class="error" required autocomplete="new-password">
+                    </div>
+                </div>
             </div>
 
         </form>
+        <div class="account">
+            <button type="submit" form="myform">Create Account</button>
+            <div class="user">Already have an account? <a href="#">Log in</a></div>
+        </div>
     </div>
-
-    
 </body>
 </html>
