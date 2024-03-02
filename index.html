@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="cssReset/normalize.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-
+               <!-- lOGO IMAGE FOOTER -->
     <div class="wrapper left">
         <div class="left-side">
             <div class="logocontainer">
@@ -22,9 +22,44 @@
         </div>
     </div>
 
-
+             <!-- Form Section -->
     <div class="wrapper right">
-        <right-side></right-side>
+        <div class="motivatePara">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>Sign-up now to get started!</p>
+            <p>You know you want to.</p>
+        </div>
+
+        <form >
+            <h2>Let's do this!</h2>
+            <div class="left-form">
+                <label for="firstName">FIRST NAME*</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+
+                <label for="email">EMAIL*</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+
+                <label for="pass1">PASSWORD*</label>
+                <input type="password" id="pass1" name="password" required autocomplete="new-password">
+            </div>
+
+            <div class="right-form">
+                <label for="lastName">LAST NAME*</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+
+                <label for="telephone">PHONE NUMBER*</label>
+                <input type="tel" id="telephone" name="telephone" required autocomplete="tel">
+
+                <label for="pass2">CONFIRM PASSWORD*</label>
+                <input type="password" id="pass2" name="password" required autocomplete="new-password">
+            </div>
+
+            <div class="account">
+                <button type="submit">Create Account</button>
+                <div class="user">Already have an account? <a href="#">Log in</a></div>
+            </div>
+
+        </form>
     </div>
 
     
