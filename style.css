@@ -57,14 +57,16 @@ footer{
     top: 10px;  
 }
 
-a {
+footer a {
     color: #fff;  
 }
 
 
                /* ------- Form ------- */  
 
-
+.wrapper.right {
+    background: #fbfafa;
+}
 
 
 
