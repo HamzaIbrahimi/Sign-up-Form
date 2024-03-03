@@ -21,7 +21,7 @@ body {
 }
          /*------- Logo side with Image ------- */
 .wrapper.left {
-    width: min(700px, 70%); 
+    width: 700px; 
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     color: #fff;   
@@ -97,12 +97,12 @@ form  {
     box-shadow: var(--coolBox-shadow); 
     position: relative;
     font-size: 2rem;
+    
 }
 
 h3 {
     font-size: 2rem;
-    font-weight: 400;
-    
+    font-weight: 300;  
 }
 
 .left-form > div,
@@ -113,8 +113,7 @@ h3 {
 
 .flexwrapper {
     display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
+    gap: 40px;
 }
 
 label {
@@ -126,7 +125,7 @@ input {
     width: 300px;
     margin: 30px;   
     font-weight: 100; 
-    font-size: 1rem;
+    
 }
 
 .account {
@@ -155,9 +154,7 @@ input:focus {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.3); 
     outline: 0; 
 }
-input:not(:focus) {
-    opacity: 0.5;
-}
+
 
 
 
